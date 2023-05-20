@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Celebrare</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <button id="backButton" onclick="goBack()" style="align-self: flex-start;"><i class="fa fa-chevron-left fa-2x icon" aria-hidden="true" ></i></button>
+            <div class="centered-text">Add Image/Icon</div>
+        </div>
+        <div class="upload">
+            <div>Upload Image</div>
+            <button onclick="document.getElementById('imageInput').click()" class="choose">Choose from the Device</button>
+            <input type="file" id="imageInput" accept="image/*" capture="camera" style="display: none;">
+          </div>                    
+    </div>
+    <script>
+        function goBack() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
